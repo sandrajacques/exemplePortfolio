@@ -1,5 +1,137 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Sixtyfour+Convergence&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 900px;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    
+}
+
+header {
+    width: 100%;
+    /* largeur maximum*/
+    background-color: rgb(206, 206, 224);
+    height: 80px;
+    /* Hauteur du header*/
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    ;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    /* Positionner la nav tout à droite*/
+    margin-right: 20px;
+    /* ajouter un espace sur le bord droit*/
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    /* enlever les points de la liste*/
+}
+
+.nav-menu li {
+    margin-top: 20px;
+    /*permet d'ajouter un espace en haut de la nav*/
+    margin-left: 30px;
+    /* permet  un espacement entre les différents onglets*/
+}
+
+.nav-menu a {
+    color: black;
+    /* couleur des textes des liens a href*/
+    text-decoration: none;
+    /* supprime le trait au dessous des liens*/
+    padding: 10px 15px;
+    /* espace entre les liens*/
+    transition: background-color 0.3s;
+    /*action reliée au passage de la souris*/
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    color: rgb(211, 109, 25);
+}
+.container{
+    display: flex;  
+    height: auto;  
+}
+.partie{
+    flex: 1;/* Chaque partie prend 50% de l'espace disponible */
+}
+
+h2 {/* john doe*/
+    margin-left: 20px;  
+    margin-top: 150px; 
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-size: 90px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "BLED" 0,
+        "SCAN" 0,
+        "XELA" 0,
+        "YELA" 0;
+}
+
+h1{/* titre bienvenue*/
+    color: white;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 150px;
+    margin-top:50px;
+    margin-left: 60px;
+    
+}
+img{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 42px 3px rgba(255, 120, 114);
+    -webkit-box-shadow: 10px 10px 42px 3px rgba(255, 120, 114);
+    -moz-box-shadow: 10px 10px 42px 3px rgba(255, 120, 114);
+
+}
+.definition{
+    color: white;
+    font-size: 30px;   
+    
+}
+.btssio{
+    font-size: 80px;
+    text-align: center;
+}
+.text{
+    text-align:justify;
+    width: 90%;
+    margin-left: 80px;       
+}
+
+.option{
+    display: flex;
+    margin: 40px;
+    
+}
+.option p{
+    font-size: 20px;
+    text-align: justify;
+}
+.option li{
+font-size: 20px;
+}
+.sisr p{
+    width: 800px;
+}
+
