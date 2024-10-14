@@ -5,21 +5,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     height: 900px;
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    
+    background-color:black;    
 }
 
-header {
+header {  
     width: 100%;
     /* largeur maximum*/
-    background-color: rgb(206, 206, 224);
     height: 80px;
-    /* Hauteur du header*/
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    ;
+    /* Hauteur du header*/    
+    
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 20px;
 }
 
 nav {
@@ -37,14 +39,14 @@ nav {
 }
 
 .nav-menu li {
-    margin-top: 20px;
+    margin-top: 30px;
     /*permet d'ajouter un espace en haut de la nav*/
-    margin-left: 30px;
+    margin-left: 40px;
     /* permet  un espacement entre les différents onglets*/
 }
 
 .nav-menu a {
-    color: black;
+    color:#C69c65;
     /* couleur des textes des liens a href*/
     text-decoration: none;
     /* supprime le trait au dessous des liens*/
@@ -58,12 +60,12 @@ nav {
 }
 
 .nav-menu a:hover {
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-    color: rgb(211, 109, 25);
+    background-image: linear-gradient(to top, #6d4e3a 0%, #c69c65 100%);
+    color: black;
 }
-.container{
-    display: flex;  
-    height: auto;  
+.container-main{
+    display: flex; 
+    height: 500px;      
 }
 .partie{
     flex: 1;/* Chaque partie prend 50% de l'espace disponible */
@@ -73,65 +75,196 @@ h2 {/* john doe*/
     margin-left: 20px;  
     margin-top: 150px; 
     font-family: "Sixtyfour Convergence", sans-serif;
-    font-size: 90px;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-        "BLED" 0,
-        "SCAN" 0,
-        "XELA" 0,
-        "YELA" 0;
+    font-size: 90px;    
+    letter-spacing: 10px;    
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 
+        1px 1px 0 #c69c65, 
+        -1px -1px 0 #6d4e3a, 
+        2px 2px 0 #c69c65, 
+        -2px -2px 0 #6d4e3a;
 }
 
 h1{/* titre bienvenue*/
+    color:antiquewhite;   
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    margin-top:50px;
+    margin-left: 60px;
+    
+}
+.profil{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 42px 3px #c69c65;
+    -webkit-box-shadow: 10px 10px 42px 3px #c69c65;
+    -moz-box-shadow: 10px 10px 42px 3px #c69c65;
+}
+footer section{
+    display: flex; 
+    margin-left: 40px;
+}
+.btn-grad{
+    background-image: linear-gradient(to right, #000000 0%, #c69c65  51%, #000000  100%);
+    margin: 10px;
+    padding: 8px 20px 8px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;  
+    font-weight: bold;      
+    border-radius: 10px;
+    display: block;
+    font-size: 16px;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+.boutons a{
+    text-decoration: none;
+}
+/* PAGE BTS SIO */
+.sigle{
+    font-size: 40px;
     color: white;
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 150px;
-    margin-top:50px;
-    margin-left: 60px;
-    
-}
-img{
-    height: 500px;
-    width: 500px;
-    border-radius: 50%;
-    box-shadow: 10px 10px 42px 3px rgba(255, 120, 114);
-    -webkit-box-shadow: 10px 10px 42px 3px rgba(255, 120, 114);
-    -moz-box-shadow: 10px 10px 42px 3px rgba(255, 120, 114);
-
-}
-.definition{
-    color: white;
-    font-size: 30px;   
-    
+    margin-bottom: 30px;
 }
 .btssio{
-    font-size: 80px;
+    font-size: 50px;
     text-align: center;
+    display: inline-block;
+    background: linear-gradient(to left, #c69c65, #6d4e3a);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 20px;
 }
+
 .text{
     text-align:justify;
     width: 90%;
-    margin-left: 80px;       
+    margin-left: 80px;     
+    font-size: 25px;  
+    margin-bottom: 30px;  
+    background: #5A81D6;
+    background-image: linear-gradient(to right, #6d4e3a 0%, #996f54 50%, #c7916e 50%, #C69c65 100%);
+    background-clip: text;
+    color: transparent;
+    word-spacing: 6px;/*permet d'ajouter des espaces entre les mots*/
+}
+span{
+    font-weight: bold;
+    font-size: 18px;
 }
 
-.option{
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #996f54;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.option-buttons {
     display: flex;
-    margin: 40px;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: #000000;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.option-content {
+
+    border: 5px solid #0c0c0c;
+    padding: 20px;
+    margin-top: 8px;
+    border-radius: 4px;
+}
+
+.option-content h3 {
+    margin-top: 0;
+    margin-bottom: 5px;}
+p{
+margin-bottom: 15px;
+word-spacing: 6px;
+    }
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+li{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+input[type="radio"] {
+    display: none;
+    border: 1px solid #996f54;
+}
+
+#slam:checked ~ #sisr-content,
+#sisr:checked ~ #slam-content {
+    display: none;
+}
+.option-buttons .sisr-button,
+.option-buttons .slam-button {
+    background-color: #996f54;
+    color: black;
+    padding: 8px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+}
+/* PAGE ECOLE & ENTREPRISE */
+
+.card {
+    display: flex;
+    justify-content: center;
+    background-color: #6d4e3a;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 500px;
+    height: 600px;    
+    margin: 50px;
+
+}
+.card-image {
+    width:auto;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10%;
+    margin-top: 50px;
+    padding:8px;
+}
+.card-content {
+    padding: 20px;
+}
+.card-espace{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    align-items: center;
     
 }
-.option p{
-    font-size: 20px;
-    text-align: justify;
+.card-title{
+    color: red;
+    font-size: 50px;
 }
-.option li{
-font-size: 20px;
-}
-.sisr p{
-    width: 800px;
-}
+
 
