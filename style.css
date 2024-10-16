@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body {
-    height: 900px;
+    min-height: 100vh;
     background-color:black;    
 }
 
@@ -14,7 +14,8 @@ header {
     width: 100%;
     /* largeur maximum*/
     height: 80px;
-    /* Hauteur du header*/    
+    /* Hauteur du header*/   
+    padding: 10px 0; 
     
 }
 .logo{
@@ -30,6 +31,7 @@ nav {
     /* Positionner la nav tout à droite*/
     margin-right: 20px;
     /* ajouter un espace sur le bord droit*/
+    
 }
 
 .nav-menu {
@@ -105,7 +107,8 @@ h1{/* titre bienvenue*/
 }
 footer section{
     display: flex; 
-    margin-left: 40px;
+    align-items: center;
+
 }
 .btn-grad{
     background-image: linear-gradient(to right, #000000 0%, #c69c65  51%, #000000  100%);
@@ -267,4 +270,141 @@ input[type="radio"] {
     font-size: 50px;
 }
 
+/* RESPONSIVE */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav-menu {
+        justify-content: center;
+    }
 
+    .nav-menu a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    .container-main {
+        flex-direction: column;
+    }
+
+
+    h1 {
+        font-size: 50px;
+        margin-top: 30px;
+    }
+
+    h2 {
+        font-size: 50px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .profil {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    footer section {
+        justify-content: space-around;
+    }
+
+    .btn-grad {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+/* version mobile */
+@media screen and (max-width: 430px) {
+    header {
+        height: auto;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    nav {
+        margin-right: 0;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu li {
+        margin: 5px 0;
+    }
+
+    .nav-menu a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 32px;
+        margin-top: 15px;
+        letter-spacing: 3px;
+    }
+
+    .container-main {
+        flex-direction: column-reverse;
+    }
+
+    .profil {
+        width: 100%;
+        height: auto;
+        margin: 0 auto 10px;
+    }
+
+    footer section {
+    justify-content: center;
+    align-items: center;
+    }
+
+    .btn-grad {
+        width: 80%;
+        max-width: 200px;
+        font-size: 10px;
+        margin: 8px 0;
+        text-align: center;
+    }
+}
+
+.burger-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    margin-right: 10px;
+}
+#menu-toggle {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .burger-icon {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+    }
+    #menu-toggle:checked + .burger-icon + .nav-menu {
+        display: block;
+    }
+}
+@media screen and (min-width: 769px) {
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-menu li {
+        margin-right: 1rem;
+    }
+}
